@@ -1,0 +1,5 @@
+# pg_snapshot_too_old extension
+comment = 'extension for enabling the Snapshot Too Old error in PostgreSQL'
+default_version = '0.1'
+module_pathname = '$libdir/pg_snapshot_too_old'
+relocatable = true
