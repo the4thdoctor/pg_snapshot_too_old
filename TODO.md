@@ -3,13 +3,15 @@ This will be developed in stages. The following stages have been identified:
 Initial Implementation
 ----------------------
 
-This will create the extension controlled by two settings:
+This will create the extension controlled by the following parameters:
 
-    pg_snapshot_too_old_enabled
-    pg_snapshot_too_old_transation_limit
-
+    pg_snapshot_too_old_enabled (enum) on|off
+    pg_snapshot_too_old_transation_limit (bigint)  
+    pg_snapshot_too_old_time (interval)
 These can be enabled globally and will affect all transactions.
 Any transaction exceeding the limit will be aborted and rolled back.
+
+A background worker will check on a regular basis
 
 Improvements
 ------------
