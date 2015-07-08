@@ -45,7 +45,11 @@ This extension will enable the Snapshot Too Old error. This error is fired when
 a transaction reaches a certain age, aborting the transaction and rolling back
 any changes.
 
+### Logging
+
+What does this log when a transaction is aborted?
+
 SEE ALSO
 --------
 
-...
+Reference to Oracle Snapshot Too Old error.
