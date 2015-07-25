@@ -7,7 +7,7 @@ This will create the extension controlled by the following custom parameters:
 
     pg_snap_old.enabled (enum) on|off
     pg_snap_old.trn_limit (bigint)  
-    pg_snap_old.sleep (interval)
+    pg_snap_old.naptime (interval)
 These can be enabled globally and will affect all transactions.
 Any transaction exceeding the limit will be aborted and rolled back.
 
